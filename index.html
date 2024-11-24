@@ -92,6 +92,64 @@
             margin-bottom: 15px;
         }
 
+        /* Tokenomics Section */
+        .tokenomics-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .token-chart {
+            text-align: center;
+            width: 120px;
+        }
+
+        .circular-chart {
+            width: 100px;
+            height: 100px;
+            transform: rotate(-90deg);
+        }
+
+        .circle-bg {
+            fill: none;
+            stroke: #eee;
+            stroke-width: 3.8;
+        }
+
+        .circle {
+            fill: none;
+            stroke-width: 3.8;
+            stroke-linecap: round;
+            animation: progress 1s ease-out forwards;
+        }
+
+        .circular-chart.blue .circle {
+            stroke: #6A0DAD;
+        }
+
+        .circular-chart.red .circle {
+            stroke: #FF4500;
+        }
+
+        .circular-chart.green .circle {
+            stroke: #32CD32;
+        }
+
+        .percentage {
+            fill: #ffffff;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.5em;
+            text-anchor: middle;
+        }
+
+        @keyframes progress {
+            from {
+                stroke-dasharray: 0 100;
+            }
+        }
+
         /* Roadmap Section */
         .roadmap-container {
             display: grid;
@@ -167,10 +225,54 @@
     <!-- Tokenomics Section -->
     <div class="section" id="tokenomics">
         <h2>Tokenomics</h2>
-        <div class="tokenomics">
-            <p><strong>Total Supply:</strong> 1 Trillion</p>
-            <p><strong>Burn Mechanism:</strong> 2% of each transaction is burned to ensure scarcity.</p>
-            <p><strong>Holder Rewards:</strong> 1% of every transaction is redistributed to loyal holders.</p>
+        <div class="tokenomics-content">
+            <div class="token-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart blue">
+                    <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path class="circle"
+                        stroke-dasharray="60, 40" 
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <text x="18" y="20.35" class="percentage">60%</text>
+                </svg>
+                <p>Community & Ecosystem</p>
+            </div>
+
+            <div class="token-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                    <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path class="circle"
+                        stroke-dasharray="25, 75" 
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <text x="18" y="20.35" class="percentage">25%</text>
+                </svg>
+                <p>Development Fund</p>
+            </div>
+
+            <div class="token-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart green">
+                    <path class="circle-bg"
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path class="circle"
+                        stroke-dasharray="15, 85" 
+                        d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <text x="18" y="20.35" class="percentage">15%</text>
+                </svg>
+                <p>Marketing</p>
+            </div>
         </div>
     </div>
 
@@ -211,7 +313,7 @@
     <!-- Community Section -->
     <div class="section" id="community">
         <h2>Join the Community</h2>
-        <p>Be part of the Rottinu Pack! Follow us on X:</p>
+        <p>Be part of the Rottinu Pack! Follow us on:</p>
         <p>
             <a href="https://x.com/Rottinu_sol">Twitter</a> 
         </p>
@@ -225,3 +327,4 @@
 
 </body>
 </html>
+
