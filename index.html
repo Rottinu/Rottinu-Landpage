@@ -7,41 +7,24 @@
     <style>
         /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0d0d0d;
+            background: url('background.jpg') no-repeat center center fixed; /* Single background for body and header */
+            background-size: cover;
             color: #ffffff;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Arial Black', sans-serif;
-            margin: 0;
-            color: #FFD700;
-        }
-
-        a {
-            text-decoration: none;
-            color: #FFD700;
+            font-family: 'Arial', sans-serif;
         }
 
         /* Hero Section */
         .hero {
             text-align: center;
             padding: 100px 20px;
-            background: linear-gradient(to bottom, rgba(106, 13, 173, 1), rgba(106, 13, 173, 0), rgba(0, 0, 0, 1)), 
-            url('Header.jpg') no-repeat center center;
-            background-size: cover;
             color: #ffffff;
-        }
-
-        .hero img {
-            width: 200px;
-            margin-bottom: 20px;
         }
 
         .hero h1 {
             font-size: 48px;
+            margin: 20px 0;
         }
 
         .hero p {
@@ -58,6 +41,7 @@
             font-size: 18px;
             font-weight: bold;
             border-radius: 5px;
+            text-decoration: none;
             transition: 0.3s;
         }
 
@@ -84,7 +68,7 @@
         }
 
         .tokenomics {
-            background-color: #222222;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for readability */
             padding: 20px;
             margin: 20px auto;
             border-radius: 10px;
@@ -93,19 +77,10 @@
 
         /* Footer */
         footer {
-            background-color: #111111;
-            color: #999999;
+            background-color: rgba(0, 0, 0, 0.8); /* Footer with semi-transparent background */
+            color: #ffffff;
             text-align: center;
             padding: 20px;
-        }
-
-        footer a {
-            color: #FFD700;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            color: #ffffff;
         }
     </style>
 </head>
@@ -113,20 +88,19 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <img src="logo.png" alt="Rottinu Logo">
-        <h1>Rottinu $ROTT</h1>
-        <p>Unleashing the Power of Meme Coins$</p>
-        <div class="cta-buttons">
-            <a href="#Buy-$ROTT-Now">Buy $ROTT Now</a>
-            <a href="#community">Join the Pack</a>
-        </div>
+    <img src="logo.png" alt="Rottinu Logo">
+    <h1>Rottinu Token $ROTT</h1>
+    <p>Unleashing the Power of Meme Coins $.</p>
+    <div class="cta-buttons">
+        <a href="#how-to-buy">BUY $ROTT NOW</a>
+        <a href="#community">JOIN THE PACK</a>
     </div>
+</div>
 
     <!-- About Section -->
     <div class="section" id="about">
         <h2>What is Rottinu?</h2>
-        <p>Rottinu is a community-driven meme coin inspired by the strength and loyalty of Rottweilers. 
-        Combining the fun of meme culture with the power of decentralized finance, Rottinu aims to lead the pack in the crypto space.</p>
+        <p>Rottinu is a community-driven meme coin inspired by the strength and loyalty of Rottweilers. Combining the fun of meme culture with the power of decentralized finance, Rottinu aims to lead the pack in the crypto space.</p>
     </div>
 
     <!-- Tokenomics Section -->
@@ -153,7 +127,7 @@
         <h2>Join the Community</h2>
         <p>Be part of the Rottinu Pack! Follow us on:</p>
         <p>
-            <a href="https://x.com/Rottinu_sol">Twitter</a> |
+            <a href="https://x.com/Rottinu_sol">Twitter</a> 
         </p>
     </div>
 
