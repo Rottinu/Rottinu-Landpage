@@ -67,37 +67,36 @@
             line-height: 1.8;
         }
 
-        .tokenomics {
-            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for readability */
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 800px;
+        /* Roadmap Section */
+        .roadmap-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
         }
 
-        /* How to Buy Section */
-        .how-to-buy {
-            padding: 80px 20px;
+        .roadmap-phase {
             background-color: rgba(0, 0, 0, 0.7);
-            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
         }
 
-        .how-to-buy h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
+        .roadmap-phase h3 {
+            font-size: 24px;
             color: #FFD700;
-        }
-
-        .how-to-buy ol {
-            text-align: left;
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        .how-to-buy ol li {
             margin-bottom: 15px;
+        }
+
+        .roadmap-phase ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #cccccc;
+            font-size: 18px;
+        }
+
+        .roadmap-phase ul li {
+            margin-bottom: 10px;
         }
 
         /* Footer */
@@ -113,15 +112,15 @@
 
     <!-- Hero Section -->
     <div class="hero">
-    <img src="logo.png" alt="Rottinu Logo">
-    <h1>PRESALE</h1>
-    <h2>Rottinu Token $ROTT</h2>
-    <p>Unleashing the Power of Meme Coins $.</p>
-    <div class="cta-buttons">
-        <a href="#how-to-buy">BUY $ROTT NOW</a>
-        <a href="#community">JOIN THE PACK</a>
+        <img src="logo.png" alt="Rottinu Logo">
+        <h1>PRESALE</h1>
+        <h2>Rottinu Token $ROTT</h2>
+        <p>Unleashing the Power of Meme Coins $.</p>
+        <div class="cta-buttons">
+            <a href="#how-to-buy">BUY $ROTT NOW</a>
+            <a href="#community">JOIN THE PACK</a>
+        </div>
     </div>
-</div>
 
     <!-- About Section -->
     <div class="section" id="about">
@@ -129,43 +128,38 @@
         <p>Rottinu is a community-driven meme coin inspired by the strength and loyalty of Rottweilers. Combining the fun of meme culture with the power of decentralized finance, Rottinu aims to lead the pack in the crypto space.</p>
     </div>
 
-    <!-- How to Buy Section -->
-    <div class="how-to-buy" id="how-to-buy">
-        <h2>How to Buy Rottinu's Presale</h2>
-        <p>Follow these simple steps to get $ROTT Airdrop:</p>
-        <ol>
-            <li><strong>Set up a wallet:</strong> Download and install a crypto wallet like Phantom.</li>
-            <li><strong>Buy the required base currency:</strong> Purchase the base cryptocurrency (SOL) on an exchange like Coinbase or Binance, then send it to your wallet.</li>
-            <li><strong>Send SOL to get Airdrop:</strong> Send SOL (Min. 0.1SOL Max. 10SOL) to this Wallet Adress:____________________ to get in the presale. $ROTT will then be Airdropped to your buying wallet.</li>
-        </ol>
-    </div>
-
-    <!-- Tokenomics Section -->
-    <div class="section" id="tokenomics">
-        <h2>Tokenomics</h2>
-        <div class="tokenomics">
-            <p><strong>Total Supply:</strong> 1 Trillion</p>
-            <p><strong>Burn Mechanism:</strong> 2% of each transaction is burned to ensure scarcity.</p>
-            <p><strong>Holder Rewards:</strong> 1% of every transaction is redistributed to loyal holders.</p>
-        </div>
-    </div>
-
     <!-- Roadmap Section -->
     <div class="section" id="roadmap">
         <h2>Roadmap</h2>
-        <p><strong>Phase 1:</strong> Launch & Community Building</p>
-        <p><strong>Phase 2:</strong> Exchange Listings & Partnerships</p>
-        <p><strong>Phase 3:</strong> NFT Integration</p>
-        <p><strong>Phase 4:</strong> Ecosystem Expansion</p>
-    </div>
-
-    <!-- Community Section -->
-    <div class="section" id="community">
-        <h2>Join the Community</h2>
-        <p>Be part of the Rottinu Pack! Follow us on:</p>
-        <p>
-            <a href="https://x.com/Rottinu_sol">Twitter</a> 
-        </p>
+        <div class="roadmap-container">
+            <div class="roadmap-phase">
+                <h3>Phase 1: Launch & Community Building</h3>
+                <ul>
+                    <li>Token launch on Solana.</li>
+                    <li>Establish Telegram community.</li>
+                </ul>
+            </div>
+            <div class="roadmap-phase">
+                <h3>Phase 2: Listings & Partnerships</h3>
+                <ul>
+                    <li>Get listed on major DEXs and CoinMarketCap.</li>
+                    <li>Partner with influencers and projects.</li>
+                </ul>
+            </div>
+            <div class="roadmap-phase">
+                <h3>Phase 3: NFT Integration</h3>
+                <ul>
+                    <li>Launch exclusive Rottinu NFT collection of 6,000 unique masterpieces.</li>
+                    <li>Grant access to real utility and benefits for early $ROTT holders.</li>
+                </ul>
+            </div>
+            <div class="roadmap-phase">
+                <h3>Phase 4: Ecosystem Expansion</h3>
+                <ul>
+                    <li>Explore staking, farming, and potential Dapp development.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
