@@ -126,16 +126,16 @@
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
         }
 
-        .circular-chart.blue .circle {
-            stroke: url(#gradient-blue);
+        .circular-chart.lightblue .circle {
+            stroke: url(#gradient-lightblue);
         }
 
-        .circular-chart.red .circle {
-            stroke: url(#gradient-red);
+        .circular-chart.white .circle {
+            stroke: url(#gradient-white);
         }
 
-        .circular-chart.green .circle {
-            stroke: url(#gradient-green);
+        .circular-chart.lightgreen .circle {
+            stroke: url(#gradient-lightgreen);
         }
 
         .percentage {
@@ -231,23 +231,24 @@
         <h2>Tokenomics</h2>
         <svg style="display:none;">
             <defs>
-                <linearGradient id="gradient-blue" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#6A0DAD" />
-                    <stop offset="100%" stop-color="#FFD700" />
+                <linearGradient id="gradient-lightblue" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00d4ff" />
+                    <stop offset="100%" stop-color="#0099cc" />
                 </linearGradient>
-                <linearGradient id="gradient-red" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#FF4500" />
-                    <stop offset="100%" stop-color="#FFD700" />
+                <linearGradient id="gradient-white" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" />
+                    <stop offset="100%" stop-color="#cccccc" />
                 </linearGradient>
-                <linearGradient id="gradient-green" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#32CD32" />
-                    <stop offset="100%" stop-color="#FFD700" />
+                <linearGradient id="gradient-lightgreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#90ee90" />
+                    <stop offset="100%" stop-color="#32cd32" />
                 </linearGradient>
             </defs>
         </svg>
         <div class="tokenomics-content">
+            <!-- Community & Ecosystem -->
             <div class="token-chart">
-                <svg viewBox="0 0 36 36" class="circular-chart blue">
+                <svg viewBox="0 0 36 36" class="circular-chart lightblue">
                     <path class="circle-bg"
                         d="M18 2.0845
                         a 15.9155 15.9155 0 0 1 0 31.831
@@ -261,8 +262,9 @@
                 </svg>
                 <p>Community & Ecosystem</p>
             </div>
+            <!-- Development Fund -->
             <div class="token-chart">
-                <svg viewBox="0 0 36 36" class="circular-chart red">
+                <svg viewBox="0 0 36 36" class="circular-chart white">
                     <path class="circle-bg"
                         d="M18 2.0845
                         a 15.9155 15.9155 0 0 1 0 31.831
@@ -276,8 +278,9 @@
                 </svg>
                 <p>Development Fund</p>
             </div>
+            <!-- Marketing -->
             <div class="token-chart">
-                <svg viewBox="0 0 36 36" class="circular-chart green">
+                <svg viewBox="0 0 36 36" class="circular-chart lightgreen">
                     <path class="circle-bg"
                         d="M18 2.0845
                         a 15.9155 15.9155 0 0 1 0 31.831
@@ -345,3 +348,4 @@
 
 </body>
 </html>
+
