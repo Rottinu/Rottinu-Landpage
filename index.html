@@ -114,7 +114,7 @@
 
         .circle-bg {
             fill: none;
-            stroke: rgba(255, 255, 255, 0.1);
+            stroke: rgba(255, 255, 255, 0.1); /* Light gray background */
             stroke-width: 3.8;
         }
 
@@ -123,19 +123,18 @@
             stroke-width: 3.8;
             stroke-linecap: round;
             animation: progress 1.5s ease-out forwards;
-            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
         }
 
         .circular-chart.lightblue .circle {
-            stroke: url(#gradient-lightblue);
+            stroke: #00d4ff; /* Light blue */
         }
 
         .circular-chart.white .circle {
-            stroke: url(#gradient-white);
+            stroke: #ffffff; /* White */
         }
 
         .circular-chart.lightgreen .circle {
-            stroke: url(#gradient-lightgreen);
+            stroke: #90ee90; /* Light green */
         }
 
         .percentage {
@@ -229,22 +228,6 @@
     <!-- Tokenomics Section -->
     <div class="section" id="tokenomics">
         <h2>Tokenomics</h2>
-        <svg style="display:none;">
-            <defs>
-                <linearGradient id="gradient-lightblue" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#00d4ff" />
-                    <stop offset="100%" stop-color="#0099cc" />
-                </linearGradient>
-                <linearGradient id="gradient-white" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#ffffff" />
-                    <stop offset="100%" stop-color="#cccccc" />
-                </linearGradient>
-                <linearGradient id="gradient-lightgreen" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#90ee90" />
-                    <stop offset="100%" stop-color="#32cd32" />
-                </linearGradient>
-            </defs>
-        </svg>
         <div class="tokenomics-content">
             <!-- Community & Ecosystem -->
             <div class="token-chart">
@@ -348,5 +331,4 @@
 
 </body>
 </html>
-
 
